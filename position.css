@@ -1,152 +1,106 @@
-body{
+@@media (max-width: 760px){
+
+}
+
+
+
+
+
+*{
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  }
-  a{
-    text-decoration: none;
-    color: white;
-  }
-  a:hover{
-    color: #DFDFDD;
-  }
-  header{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    top: 0;
-    background: #8ECDF6;
-    height: 70px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    top: 0;
-    position: fixed;
-  }
-  .logo{
-    margin-top: 20px;
-  }
-  ul{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  li{
-    margin-left: 20px;
-    list-style: none;
-  }
-  .section-main{
-  width: 100%;
-  height: 700px;
-  background-image: url(https://media.port.hu/images/001/123/494.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  font-family: Verdana, sans-serif;
 }
-.section-main__content{
+body{
+  background: #DFDFDF;
   text-align: center;
+}
+header{
+  background: #8ECDF6;
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  width: 1500px;
+}
+a{
   color: white;
-  padding-top: 230px;
+  text-decoration: none;
 }
-.section-main__button{
-margin-left: 45%;
-margin-bottom: auto;
-}
-.image-button{
- bottom: 40px;
-}
-.section-about{
-  background-color: #DFDFDD;
-  text-align: center;
-  height: 350px;
-}
-.section-about__title{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #8ECDF6;
-}
-.section-about__text{
-padding-left: 40px;
-padding-right: 40px;
-}
-.section-service{
-  height: 500px;
-}
-.section-service__title{
-  background-color: #8ECDF6;
-  color: white;
-  font-size: 30px;
-  font-weight: 3px;
-  text-align: center;
-  height: 60px;
-  padding-top: 20px;
-}
-
-
-
-.section-review{
-  height: 500px;
-  background-color: #DFDFDD;
-  text-align: center;
-}
-.section-review__title{
-  color: #8ECDF6;
-  font-size: 30px;
-  font-weight: 3px;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  height: 70px;
-}
-.section-review__content{
+.nav-list{
   display: flex;
   justify-content: space-around;
-  padding-left: 7%;
-  padding-right: 7%;
-}
-.section-review__content_block{
-  width: 300px;
-}
-
-
-
-.section-contact{
-  height: 600px;
-  background-color: #8ECDF6;
-
-}
-.section-contact__title{
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  font-weight: 3px;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  height: 70px;
-}
-.section-contact__content{
-  justify-content: center;
-  display: flex;
-}
-
-.contact{
-  color: white;
-  padding-right: 100px;;
   list-style: none;
-  display: flex;
-  flex-direction: column;
+  margin-top:25px;
 
 }
-.lic::before{
-  content: "\007C";  /* юникод вертикальная линия */
-color: #fff; /* поменять цвет */
-font-weight: bold; /* поменять жирность */
-position: relative;
-padding-right: 10px;
+.logo{
+  height: 70px;
+  width: 70px;
+  background-color: red;
 
 }
-.lic{
-  padding: 20px;
+li{
+    padding-left: 10vh;
+    font-size: 100%;
 }
+.design{
+  max-width: 100em;
+  margin: 0;
+  padding: 0;
+  width: 1500px;
+  height: 100%;
+}
+.section-main__logo{
+   vertical-align: top;
+}
+.image{
+  background-image: url(Images/paper.jpg);
+  background-size: cover;
+ 	position	: relative;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-width: 100%;
+  width: 1500px;
+ }
+
+.image-text{
+ 	position	: absolute;
+ 	top: 300px;
+ 	left: 0;
+ 	width: 100%;
+  color: white;
+  font-size: 70px;
+  font-weight: normal;
+ }
+ .image-text::after{
+   content: '\02EC';
+   display: block;
+   height: 1px;
+   font-size: 100px;
+ }
 .section-main__button{
-width: 100px
+  position: relative;
+  height: 100px;
+  padding-top: 700px;
+
 }
+h2,.section-service__title{
+  color: #8ECDF6;
+  font-size: 40px;
+  font-weight: bolder;
+  }
+
+  .section-about{
+    position	: relative;
+   	width		: 100%;
+    max-width: 100em;
+    margin: 30px;;
+    padding: 0;
+    width: 1500px;
+    height: auto;
+  }
+  .section-about__text{
+   margin: 50px;
+   font-size: 20px;
+  }
