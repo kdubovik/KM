@@ -28,9 +28,10 @@ a{
 }
 .nav-list{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   list-style: none;
-  margin-top:25px;
+  /* margin-top:25px; */
 
 }
 .logo{
@@ -73,19 +74,19 @@ li{
   font-size: 70px;
   font-weight: normal;
  }
- .image-text::after{
+ /* .image-text::after{
    content: '\02EC';
    display: block;
    height: 1px;
    font-size: 100px;
- }
+ } */
 .section-main__button{
   position: relative;
   height: 100px;
   padding-top: 700px;
 
 }
-h2,.section-service__title{
+h2,.section-service__title, .section-review__title{
   color: #8ECDF6;
   font-size: 40px;
   font-weight: bolder;
@@ -104,3 +105,18 @@ h2,.section-service__title{
    margin: 50px;
    font-size: 20px;
   }
+
+.section-review__content-container-raw{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+.section-review__content_block_col-lg-1{
+  
+}
+.section-review__content_block_col-lg-2{
+
+}
+.section-review__content_block_col-lg-3{
+
+}
