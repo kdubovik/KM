@@ -22,11 +22,11 @@ function backToTop() {
     }
   }
 
-  window.onscroll = function() {
-   var scrollElem = document.getElementById("btn-scroll-up");
-   if (document.body.scrollTop > document.documentElement.clientHeight) {
-      scrollElem.style.opacity = "1";
-   } else {
+  // window.onscroll = function() {
+  //  var scrollElem = document.getElementById("btn-scroll-up");
+  //  if (document.body.scrollTop > document.documentElement.clientHeight) {
+  //     scrollElem.style.opacity = "1";
+  //  } else {
 //        scrollElem.style.opacity = "0";
 //    }
 // }
