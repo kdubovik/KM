@@ -6,13 +6,7 @@
 function trackScroll(){
   var scrolled = window.pageYOffset;
   var coords = document.documentElement.clientHeight;
-  //
-  // if (scrolled > coords) {
-  //   goTopBtn.classList.add('.btn-scroll-up-show');
-  // }
-  // if (scrolled < coords) {
-  //   goTopBtn.classList.remove('.btn-scroll-up-show')
-  // }
+
 }
 
 function backToTop() {
@@ -22,33 +16,26 @@ function backToTop() {
     }
   }
 
-  window.onscroll = function() {
-   var scrollElem = document.getElementById("btn-scroll-up");
-   if (document.body.scrollTop > document.documentElement.clientHeight) {
-      scrollElem.style.opacity = "1";
-   } else {
-//        scrollElem.style.opacity = "0";
-//    }
-// }
 
   var goTopBtn = document.querySelector('.btn-scroll-up');
 
   window.addEventListener('scroll', trackScroll);
   goTopBtn.addEventListener('click', backToTop);
+
+
+  const anchors = document.querySelectorAll('.btn-scroll-up')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+
+    const blockID = anchor.getAttribute('href')
+
+    document.querySelector(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+
 })();
-
-
-
-// function backToTop() {
-//   let button = $('btn-scroll-up');
-//   $(window).on('scroll', () => {
-//     button.fadeIn();
-//   } else {
-//     button.fadeOut();
-//   });
-//   button.on('click', () => {
-//     e.preventDefault();
-//     $('html').animate({scrollTop: 0}, 1000)
-//   })
-// }
-// backToTop();
