@@ -21,6 +21,9 @@ header{
   justify-content: center;
   min-width: 100%;
   width: 1500px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 a{
   color: white;
@@ -141,6 +144,7 @@ h2,.section-service__title, .section-review__title, .section-contact__title{
   .section-about__text{
    margin: 50px;
    font-size: 20px;
+   display: flex;
   }
 
 .section-review__content-container-raw{
@@ -157,11 +161,11 @@ h2,.section-service__title, .section-review__title, .section-contact__title{
 .section-review__content_block_line-1::after{
 content: '';
 display: flex;
-width: 70px;
-height: 5px;
+
+width: 5px;
+height: 70px;
 background-color:  #8ECDF6;
-margin-left: 140px;
-margin-top: 30px;
+margin-top: 40px;
 
 }
 
