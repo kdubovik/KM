@@ -40,25 +40,20 @@ a{
     align-items: center;
     justify-content: center;
     display: flex;
-<<<<<<< HEAD
     opacity: 0.3;
-=======
->>>>>>> bc97785e3c4202aeef32010576f3240d1f4a4dfe
     transition: all 0.5s ease-in;
     z-index: 2;
 }
 
-<<<<<<< HEAD
 #btn-scroll-up::before{
     content: '	\2B06';
     font-size: 23px;
     color: white;
     /* padding-top: 3px; */
-=======
+  }
 .btn-scroll-up::before{
     content: '\1F845';
     font-size: 30px;
->>>>>>> bc97785e3c4202aeef32010576f3240d1f4a4dfe
 }
 
 #btn-scroll-up:hover{
@@ -207,7 +202,6 @@ transition: 1s;
   transform: rotateY(360deg);
 }
 
-<<<<<<< HEAD
 .projects{
   width: 100%;
 }
@@ -220,7 +214,6 @@ transition: 1s;
 }
 
 =======
->>>>>>> bc97785e3c4202aeef32010576f3240d1f4a4dfe
 .section-review__content-container-raw{
   display: flex;
   justify-content: space-around;
