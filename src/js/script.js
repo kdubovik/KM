@@ -22,6 +22,11 @@ function backToTop() {
   window.addEventListener('scroll', trackScroll);
   goTopBtn.addEventListener('click', backToTop);
 
+  var goTopBtn = document.querySelector('#logo-up');
+
+  window.addEventListener('scroll', trackScroll);
+  goTopBtn.addEventListener('click', backToTop);
+
 
   const anchors = document.querySelectorAll('#btn-scroll-up')
 
@@ -39,3 +44,19 @@ for (let anchor of anchors) {
 }
 
 })();
+
+function myFunction(){
+  document.getElementById("myMenu").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.menu__button')) {
+    var dropdowns = document.getElementsByClassName("menu__content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}

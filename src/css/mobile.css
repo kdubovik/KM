@@ -1,0 +1,121 @@
+@media screen and (max-width: 650px){
+
+  header{
+   width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 70px;
+    background-color: white;
+  }
+  .image-text{
+   	position	: absolute;
+   	top: 300px;
+   	left: 0;
+   	width: 100%;
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+   }
+   .section-about__title, .section-service__title, .section-review__title, .section-contact__title, .projects__title{
+    font-size: 35px;
+  }
+  .section-about__text{
+   margin: 50px;
+   font-size:15px;
+   display: flex;
+   justify-content: center;
+  }
+.logo{
+  position: absolute;
+  right: 0;
+  z-index: 5;
+}
+.image{
+    background-image: url(../images/paper.jpg);
+    /* background-position:  bottom;
+    position: relative; */
+
+   }
+   .section-review__content_block_line-1::after{
+   content: '';
+   width: 70px;
+   height: 5px;
+   background-color:  #8ECDF6;
+   margin: 0;
+   padding: 0;
+ }
+ .section-review__content_block_col-lg-4{
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+ }
+ .section-contact{
+
+
+ }
+.section-contact__content{
+width: 280px;
+
+}
+.contact{
+  margin: 0px;
+}
+.lic{
+  padding-left: 20px;
+}
+.menu{
+  color:  #8ECDF6;
+  position: fixed;
+  display: inline-block;
+  left: 0;
+  padding-top: 10px;
+  z-index: 15;
+
+}
+.menu__content{
+    display: none;
+    position: absolute;
+    background-color: #8ECDF6;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 20 ;
+  }
+
+  .menu__content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.menu a:hover {
+  background-color: #8ECDF6;
+}
+.menu__button{
+  background-color: white;
+  color: #8ECDF6;
+  padding: 16px;
+  font-size: 16px;
+  border: 0px;
+  border-color: none;
+  cursor: pointer;
+}
+.menu__button:hover, .menu__button:focus {
+  /* background-color: #2980B9; */
+}
+.show {display: block;}
+
+.card-size{
+  width: 300px;
+  height: 300px;
+  padding-left: 25px;
+}
+
+footer{
+  height: 55px;
+}
+}

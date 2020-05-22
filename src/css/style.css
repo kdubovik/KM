@@ -1,9 +1,13 @@
-@media (max-width: 760px){
-}
+/* @media (min-width: 1480px){ */
+
 *{
   margin: 0;
   padding: 0;
   font-family: Verdana, sans-serif;
+}
+.menu{
+  z-index: 20;
+  display: none;
 }
 body{
   background: #DFDFDF;
@@ -134,7 +138,7 @@ li{
 .section-main__button{
   position: relative;
   height: 100px;
-  padding-top: 700px;
+  padding-top: 85vh;
 }
 
  .section-about__title, .section-service__title, .section-review__title, .section-contact__title, .projects__title{
@@ -206,7 +210,7 @@ transition: 1s;
   width: 100%;
 }
 .slick-wrapper{
-  height: 500px;
+  height: 400px;
   margin-top: 20vh;
 }
 .slick-container{
@@ -217,13 +221,13 @@ transition: 1s;
 .section-review__content-container-raw{
   display: flex;
   justify-content: space-around;
-flex-wrap: wrap;
-  margin: 50px;
+  flex-wrap: wrap;
+  /* margin: 50px; */
 }
 
 .section-review__content_block_col-lg-4{
-  width: 350px;
-   height: 350px;
+width: 350px;
+height: 250px;
 }
 
 .section-review__content_block_line-1::after{
@@ -237,11 +241,13 @@ margin-top: 40px;
 
 .section-contact{
   background: #8ECDF6;
+  background-size: 100%;
   height: 250px;
 }
 
 .section-contact__title{
   color: white;
+  padding-top: 20px;
 }
 
 .contact{
@@ -255,17 +261,13 @@ margin-top: 40px;
   justify-content: center;
 }
 
-.projects{
-  height: 800px;
-}
-
 .section-contact__content{
   display: flex;
   justify-content: center;
 }
 
 footer{
-  height: 70px;
+  height: 60px;
   width: 100%;
   padding-top: 30px;
 }
