@@ -12,7 +12,6 @@
 body{
   background: #DFDFDF;
   text-align: center;
-  overflow-x: hidden;
 }
 header{
   background: #8ECDF6;
@@ -212,7 +211,7 @@ transition: 1s;
 }
 .slick-wrapper{
   height: 400px;
-  margin-top: 70px;
+  margin-top: 20vh;
 }
 .slick-container{
   width: 100%;
@@ -231,7 +230,7 @@ width: 350px;
 height: 250px;
 }
 
-.section-review__content_block_line-1, .section-review__content_block_line-2::after{
+.section-review__content_block_line-1::after{
 content: '';
 display: flex;
 width: 5px;
@@ -271,15 +270,4 @@ footer{
   height: 60px;
   width: 100%;
   padding-top: 30px;
-}
-footer::after{
-color: #8ECDF6;
-content: '';
-/* display: flex;
-justify-content: center; */
-width: 70px;
-height: 5px;
-background-color:  #8ECDF6;
-margin-top: 40px;
-
 }

@@ -1,4 +1,4 @@
-@media screen and (max-width: 700px){
+@media screen and (max-width: 650px){
 
   header{
    width: 100%;
@@ -36,11 +36,11 @@
 }
 .image{
     background-image: url(../images/paper.jpg);
+    /* background-position:  bottom;
+    position: relative; */
+
    }
- .section-review__title{
-   margin: 0;
- }
-   .section-review__content_block_line-1, .section-review__content_block_line-2::after{
+   .section-review__content_block_line-1::after{
    content: '';
    width: 70px;
    height: 5px;
@@ -104,10 +104,9 @@ width: 280px;
   border-color: none;
   cursor: pointer;
 }
-.menu a:hover, .menu a:focus {
-  background-color: #23ADD7;
+.menu__button:hover, .menu__button:focus {
+  /* background-color: #2980B9; */
 }
-
 .show {display: block;}
 
 .card-size{
