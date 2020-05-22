@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .section-service__content{
 
 }
@@ -26,32 +25,3 @@ height: 100%;
 backface-visibility: hidden;
 transition: 1s;
 }
-=======
-.section-service__content{
-
-}
-.section-service__content_block{
-display: inline-block;
-margin: 10px;
-/* max-width: 100%;
- min-width: 100%;
- height: auto; */
-
-}
-.card{
-/* width: 350px;
- height: 350px; */
- position: relative;
- perspective: 1000px;
- /* z-index: 2; */
-}
-.back{
-transform: rotateY(180deg);
-}
-.section-service__content_block,.back{
-width: 100%;
-height: 100%;
-backface-visibility: hidden;
-transition: 1s;
-}
->>>>>>> e604eb7e954979594c79a2fd0cdc0eb15fe92cbe
