@@ -1,7 +1,4 @@
 @media screen and (max-width: 1024px) and (min-width: 350px){
-   body{
-    overflow-x: hidden;
-  }
   header{
    width: 100%;
     display: flex;
@@ -13,10 +10,15 @@
     height: 70px;
     background-color: white;
   }
-  .section-main__button{
-    height: 100px;
-    padding-top: 25vh;
-  }
+  .image-text{
+   	position	: absolute;
+   	top: 300px;
+   	left: 0;
+   	width: 100%;
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+   }
    .logo{
      position: absolute;
      right: 0;
@@ -59,14 +61,16 @@
      border-color: none;
      cursor: pointer;
    }
-
-  
+   .show {display: block;}
+   .section-review__content_block_line-2{
+     display: none;
+   }
+   @media screen and (max-width: 700px){
+   .section-review__content_block_line-1{
+     display: none;
+   }
   }
   .section-review__content_block_col-lg-4{
     padding-top: 0;
   }
-  .font{
-        font-size: 27px;
-        padding-top: 40px;
-      }
 }

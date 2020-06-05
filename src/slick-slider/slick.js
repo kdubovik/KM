@@ -15,6 +15,11 @@
 
  */
 /* global window, document, define, jQuery, setInterval, clearInterval */
+$(document).ready(function(){
+
+    $('.slick-container').slick();
+  
+  });
 ;(function(factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {
@@ -74,7 +79,7 @@
                 rows: 1,
                 rtl: false,
                 slide: '',
-                slidesPerRow: 1,
+                slidesPerRow: 3,
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 speed: 3000,
@@ -584,7 +589,7 @@
             _.$slider.empty().append(newSlides);
             _.$slider.children().children().children()
                 .css({
-                    'width':(100 / _.options.slidesPerRow) + '%',
+                    // 'width':(100 / _.options.slidesPerRow) + '%',
                     'display': 'inline-block'
                 });
 
@@ -2930,7 +2935,7 @@
         _.$slides
             .removeClass('slick-slide slick-active slick-visible slick-current')
             .attr('aria-hidden', 'true')
-            .css('width', '');
+            .css('', '');
 
     };
 

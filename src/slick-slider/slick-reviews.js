@@ -15,6 +15,8 @@
 
  */
 /* global window, document, define, jQuery, setInterval, clearInterval */
+
+
 ;(function(factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {
@@ -24,6 +26,7 @@
     } else {
         factory(jQuery);
     }
+
 
 }(function($) {
     'use strict';
@@ -75,8 +78,8 @@
                 rtl: false,
                 slide: '',
                 slidesPerRow: 1,
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToShow: 1,
+                slidesToScroll: 2,
                 speed: 3000,
                 swipe: true,
                 swipeToSlide: false,
@@ -584,7 +587,7 @@
             _.$slider.empty().append(newSlides);
             _.$slider.children().children().children()
                 .css({
-                    'width':(100 / _.options.slidesPerRow) + '%',
+                    // 'width':(100 / _.options.slidesPerRow) + '%',
                     'display': 'inline-block'
                 });
 
@@ -2930,7 +2933,7 @@
         _.$slides
             .removeClass('slick-slide slick-active slick-visible slick-current')
             .attr('aria-hidden', 'true')
-            .css('width', '');
+            .css('', '');
 
     };
 

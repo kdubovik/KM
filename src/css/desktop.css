@@ -1,0 +1,17 @@
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+   body{
+    overflow-x: hidden;
+  }
+    .card-size{
+        width: 250px;
+        height: 250px;
+      }
+      .card{
+        width: 250px;
+        height:250px;   
+      }
+      .font{
+        font-size: 20px;
+        padding-top: 40px;
+      }
+}

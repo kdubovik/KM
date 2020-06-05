@@ -70,6 +70,7 @@ a{
 }
 
 .nav-list{
+  padding: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -77,6 +78,9 @@ a{
   list-style: none;
   cursor: pointer;
   line-height: 1;
+}
+.nav{
+  padding-left: 40px;
 }
 
 .nav::after{
@@ -100,7 +104,7 @@ width: 100%;
 }
 
 li{
-    padding-left: 10vh;
+    /* padding-left: 10vh; */
     font-size: 100%;
 }
 
@@ -118,6 +122,7 @@ li{
 
 .image{
   background-image: url(../images/paper.jpg);
+  background-size: 100%;
   background-size: cover;
  	position	: relative;
   margin: 0;
@@ -127,27 +132,23 @@ li{
  }
 
 .image-text{
- 	position	: absolute;
- 	top: 300px;
- 	left: 0;
- 	width: 100%;
+   padding-top: 40vh;
   color: white;
   font-size: 70px;
   font-weight: normal;
  }
 
 .section-main__button{
-  position: relative;
   height: 100px;
-  padding-top: 85vh;
+  padding-top: 35vh;
 }
 
  .section-about__title, .section-service__title, .section-review__title, .section-contact__title, .projects__title{
   color: #8ECDF6;
   font-size: 40px;
-  display: flex;
-  justify-content: center;
-  margin: 40px;
+  padding: 30px 0px 30px 0px;
+  font-family: sans-serif;
+  font-weight: 500;
   }
 
   .section-about{
@@ -161,7 +162,8 @@ li{
   }
 
   .section-about__text{
-   margin: 50px;
+   margin: 65px;
+   margin-top: 10px;
    font-size: 20px;
    display: flex;
   }
@@ -173,7 +175,7 @@ li{
   }
   .section-service__title{
     color: white;
-    padding-top: 30px;
+   padding: 30px 0px 30px 0px;
   }
   /* Анимация */
 
@@ -188,6 +190,14 @@ li{
     height: 350px;
     perspective: 1000px;
   }
+     .font{
+        font-size: 30px;
+        padding-top: 45px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
 
 .back{
 transform: rotateY(180deg);
@@ -237,7 +247,7 @@ display: flex;
 width: 5px;
 height: 70px;
 background-color:  #8ECDF6;
-margin-top: 40px;
+/* margin-top: 40px; */
 }
 
 .section-contact{
@@ -266,6 +276,19 @@ margin-top: 40px;
   display: flex;
   justify-content: center;
 }
+.lic::after{
+  display: flex;
+  justify-content: center;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  content: "";
+  transition: width 0.2s ease-out;
+}
+.lic:hover::after, .lic:focus::after{
+  width: 100%;
+  }
 
 footer{
   height: 60px;
