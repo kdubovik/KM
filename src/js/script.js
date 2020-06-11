@@ -50,7 +50,7 @@ function myFunction(){
 }
 window.onclick = function(event) {
   if (!event.target.matches('.menu__button')) {
-    var dropdowns = document.getElementsByClassName("menu__content");
+    var dropdowns = document.getElementsByClassName(".menu__content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];

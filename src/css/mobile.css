@@ -20,6 +20,13 @@
     font-size: 40px;
     font-weight: normal;
    }
+   .image-button{
+     height: 20px;
+     width: 50px;
+   }
+   .section-main__button{
+     padding-top: 200px;
+   }
    .section-about__title, .section-service__title, .section-review__title, .section-contact__title, .projects__title{
     font-size: 35px;
   }
@@ -60,9 +67,6 @@
   display:flex;
   justify-content: center;
   margin: 0px;
-}
-.lic{
-  padding-left: 20px;
 }
 
 .menu{
@@ -116,20 +120,30 @@
 .font{
         font-size: 20px;
         padding: 40px;
-        padding-top: 0px;
       }
 .section-review__content_block_col-lg-4{
   width: 250px;
   height: 250px;
   margin: 30px;
   }
-  .section-review__content_block_line-1, .section-review__content_block_line-2::after{
+  .section-review__content_block_line-1::after{
     content: '';
     display: none;
     width: 5px;
     height: 2px;
     background-color:  transparent;
     margin-top: 40px;
+    }
+    
+.section-contact{
+  height: 250px;
+}
+.section-contact__content{
+  padding-top: 20px;
+}
+    li{
+      font-size: 13px;
+      margin: 2px;
     }
 
 footer{
