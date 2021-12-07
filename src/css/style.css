@@ -37,10 +37,6 @@ a{
     bottom: 40px;
     right: 30px;
     cursor: pointer;
-    /* border-width: 1.5px;
-    border-color: white;
-    border-style: solid; */
-    /* border-radius: 40px; */
     background-color: rgba(120, 120, 118, 0.7);;
     align-items: center;
     justify-content: center;
@@ -54,7 +50,6 @@ a{
     content: '	\2B06';
     font-size: 23px;
     color: white;
-    /* padding-top: 3px; */
   }
 .btn-scroll-up::before{
     content: '\1F845';
@@ -122,13 +117,11 @@ li{
 
 .image{
   background-image: url(../images/paper.jpg);
-  /* background-size: 100%; */
   background-size: cover;
    position	: relative;
   margin: 0;
   padding: 0;
   height: auto;
-  /* min-width: 100%; */
  }
 
 .image-text{
@@ -152,10 +145,16 @@ li{
   font-family: sans-serif;
   font-weight: 500;
   }
+  .section-about__title{
+    padding-bottom: 30px;
+  }
+  .section-about-link-about{
+    margin: 100px;
+  }
 
   .section-about{
-    position	: relative;
-   	width		: 100%;
+    position: relative;
+   	width: 100%;
     max-width: 100em;
     margin: 30px;;
     padding: 0;
@@ -164,16 +163,17 @@ li{
   }
 
   .section-about__text{
-   margin: 65px;
-   margin-top: 10px;
+   /* margin: 65px;
+   margin-top: 10px; */
    font-size: 20px;
-   display: flex;
+   /* display: flex; */
   }
 
   .section-service{
     background-color: #8ECDF6;
     display: block;
-
+    padding: 100px;
+    padding-top: 50px;
   }
   .section-service__title{
     color: white;
@@ -228,6 +228,10 @@ transition: 1s;
 }
 .slick-container{
   width: 100%;
+}
+.section-review-container{
+  padding: 100px;
+  padding-top: 50px;
 }
 
 .section-review__title{
@@ -284,6 +288,8 @@ background-color:  #8ECDF6;
   background: #8ECDF6;
   background-size: 100%;
   height: 250px;
+  padding: 100px;
+  padding-top: 50px;
 }
 
 .section-contact__title{
@@ -323,7 +329,7 @@ background-color:  #8ECDF6;
 
   li{
     padding-left: 10px;
-    padding: 2px 2px 2px 20px;
+    padding: 2px 2px 10px 20px;
   }
 
 footer{
